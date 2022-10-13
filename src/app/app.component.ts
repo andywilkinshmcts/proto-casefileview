@@ -8,7 +8,6 @@ import { NestedTreeControl } from '@angular/cdk/tree';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
   selectedItem = '';
   dataSource = new MatTreeNestedDataSource<DocNode>();
   treeControl = new NestedTreeControl<DocNode>((node) => node.children);
@@ -22,7 +21,6 @@ export class AppComponent {
     console.log(item);
     this.selectedItem = item;
   };
-  menu = null
 }
 
 interface DocNode {

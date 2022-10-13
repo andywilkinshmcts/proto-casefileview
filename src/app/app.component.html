@@ -16,9 +16,7 @@
           matTreeNodeToggle
           (click)="selectItem(node.name)">
           {{ node.name }}
-          <button mat-icon-button [matMenuTriggerFor]="menu">
-            <mat-icon>menu_open</mat-icon>
-          </button>
+         <app-popup-menu></app-popup-menu>
         </mat-tree-node>
         <!-- This is the tree node template for expandable nodes -->
         <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
