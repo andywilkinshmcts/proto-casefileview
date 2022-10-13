@@ -7,9 +7,10 @@ import { HelloComponent } from './hello.component';
 import { AngularSplitModule } from 'angular-split';
 import { MatTreeModule } from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatIconModule,MatTreeModule, AngularSplitModule],
+  imports: [BrowserModule, FormsModule, MatIconModule, MatTreeModule, MatMenuModule, AngularSplitModule],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })

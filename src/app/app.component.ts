@@ -22,6 +22,7 @@ export class AppComponent {
     console.log(item);
     this.selectedItem = item;
   };
+  menu = null
 }
 
 interface DocNode {
